@@ -42,6 +42,7 @@ class AuthorDetail extends Component {
       return <Loading />;
     } else {
       const author = this.state.author;
+      console.log(author.books);
       const authorName = `${author.first_name} ${author.last_name}`;
       return (
         <div className="author">
