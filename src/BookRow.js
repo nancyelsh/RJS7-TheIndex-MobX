@@ -16,11 +16,15 @@ function BookRow(props) {
     <button
       className={`btn btn-${book.available ? "success" : "danger"}`}
       onClick={() => {
-        let id = bookStore.book.id;
-        let returnedBook = bookStore.getBookById(id);
+        {
+          /* let id = bookStore.book.id;
+        let returnedBook = bookStore.getBookById(id); */
+        }
 
-        returnedBook.available = !returnedBook.available;
-        console.log(returnedBook);
+        book.available = !book.available;
+        {
+          /* console.log(returnedBook); */
+        }
       }}
     >
       {book.available ? "borrow" : "return"}
